@@ -31,7 +31,7 @@ COPY . .
 
 RUN poetry install
 
-CMD ["python","-m", "tuting.main"]
+CMD ["python","-m", "tuting_bot.main"]
 
 FROM python-base as production
 
@@ -40,4 +40,4 @@ WORKDIR $PYSETUP_PATH
 COPY ./src/ ./
 USER 10000
 
-CMD ["python","-m", "tuting.main"]
+CMD ["python","-m", "tuting_bot.main"]
