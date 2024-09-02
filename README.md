@@ -1,6 +1,6 @@
 # Tutor Accounting Bot
 
-A bookkeeping project designed for tutors and private educators. The frontend is built using Python, leveraging Telegram for user interaction and the `aiogram` library. The backend will be developed separately in a different repository will be here [back-go](https://github.com/clarkreiz/tuting_backend/tree/main)
+A bookkeeping project designed for tutors and private educators. The frontend is built using Python, leveraging Telegram for user interaction and the `aiogram` library. The backend will be developed separately in a different repository will be here [backend](https://github.com/clarkreiz/tuting_backend/tree/main)
 
 
 ## Overview
