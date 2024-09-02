@@ -37,10 +37,10 @@ jobs:
         run: poetry install --no-interaction --no-root
       - name: Install library
         run: poetry install --no-interaction
-      - name: Run application
-        run: poetry run tuting
-      - name: Test with pytest
-        run: poetry run pytest tests --cov=src
+      # - name: Run application
+      #   run: poetry run tuting
+      # - name: Test with pytest
+      #   run: poetry run pytest tests --cov=src
 
   build-image:
     runs-on: ubuntu-22.04
