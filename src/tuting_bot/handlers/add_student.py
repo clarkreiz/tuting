@@ -17,6 +17,7 @@ class StudentRegistration(state.StatesGroup):
 @router.message(filters.Command(commands=[cmds.ADD_STUDENT.code]))
 @router.message(aiogram.F.text.in_(cmds.ADD_STUDENT.text))
 async def cmd_add_student(message: types.Message, state: context.FSMContext) -> None:
+
     await state.set_state(StudentRegistration.waiting_for_name)
 
     await message.answer(text='Введите имя студента')
@@ -28,7 +29,9 @@ async def process_name(message: types.Message, state: context.FSMContext) -> Non
     user_name = message.text
 
     if len(user_name) < 2:
+
         await message.answer(text='Имя не должно быть короче 2 символов, попробуйте снова.')
+
         return
 
     await state.update_data(name=user_name)
