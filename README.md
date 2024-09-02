@@ -10,7 +10,7 @@ This repository contains the code for the Telegram bot. The bot uses an `aiohttp
 ## Features
 
 - **User-friendly Telegram interface**: Interact with the bot via Telegram.
-- **State management with FSM**: Efficiently handle user states and dialogues.
+- **FSM**: Efficiently handle dialogues.
 - **Async communication**: Uses `aiohttp` for non-blocking requests to the backend.
 
 ## Tools and Dependencies
