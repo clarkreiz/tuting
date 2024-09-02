@@ -4,6 +4,19 @@
 
 A bookkeeping project designed for tutors and private educators. The frontend is built using Python, leveraging Telegram for user interaction and the `aiogram` library. The backend will be developed separately in a different repository will be here [backend](https://github.com/clarkreiz/tuting_backend/tree/main)
 
+## TODO List
+
+### Completed:
+- ~~Boilerplate with Poetry, mypy, black~~
+- ~~Basic CI/CD, Dockerfile~~
+- ~~Bot initialization, welcome command~~
+- ~~Feature for adding a student~~
+
+### Planned:
+- View all students (separate FSM)
+- Add payment for a specific student (separate FSM)
+- Docker-compose, integration auto-tests for the aiohttp client (stub/mock go server)
+- Deploy to production
 
 ## Overview
 
