@@ -1,6 +1,7 @@
 # Tutor Accounting Bot
 
-A bookkeeping project designed for tutors and private educators. The frontend is built using Python, leveraging Telegram for user interaction and the `aiogram` library. The backend will be developed separately in a different repository using Go (Golang) and PostgreSQL.
+A bookkeeping project designed for tutors and private educators. The frontend is built using Python, leveraging Telegram for user interaction and the `aiogram` library. The backend will be developed separately in a different repository using Go (Golang) and PostgreSQL
+
 
 ## Overview
 
@@ -12,9 +13,14 @@ This repository contains the code for the Telegram bot. The bot uses an `aiohttp
 - **State management with FSM**: Efficiently handle user states and dialogues.
 - **Async communication**: Uses `aiohttp` for non-blocking requests to the backend.
 
+## Tools and Dependencies
+
+- **Package Management**: [Poetry](https://python-poetry.org/) is used for dependency management and packaging.
+- **Linting and Formatting**: [Ruff](https://github.com/charliermarsh/ruff) is chosen as the linter and formatter. Previously, I used `flake8` and `black` in my projects. Perhaps it can be configured better. Contributions or suggestions for improvement are welcome :)
+
 ## Requirements
 
-- Python 3.11+
+- Python 3.12.5+
 - poetry (all dependencies manage by poetry)
 
 ## Installation
